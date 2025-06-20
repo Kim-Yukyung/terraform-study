@@ -18,10 +18,9 @@ resource "local_file" "HelloWorld" {
   filename = "${path.module}/HelloWorld.txt"
 }
 
-resource "aws_instance" "web" {
-  ami           = "ami-0c55b159cbfafe1f0"
-  instance_type = "t2.micro"
-  tags = {
-    Name = "HelloWorld"
-  }
+resource "local_file" "HelloWorld2" {
+  content  = local_file.HelloWorld.content
+  filename = "${path.module}/HelloWorld2.txt"
+
+  depends_on = [local_file.HelloWorld]
 }
