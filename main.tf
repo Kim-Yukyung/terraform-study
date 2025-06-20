@@ -17,3 +17,11 @@ resource "local_file" "HelloWorld" {
   content  = "Hello, World!"
   filename = "${path.module}/HelloWorld.txt"
 }
+
+resource "aws_instance" "web" {
+  ami           = "ami-0c55b159cbfafe1f0"
+  instance_type = "t2.micro"
+  tags = {
+    Name = "HelloWorld"
+  }
+}
