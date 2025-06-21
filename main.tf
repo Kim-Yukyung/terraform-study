@@ -93,3 +93,8 @@ resource "local_file" "var" {
   content  = var.var
   filename = "${path.module}/resource/var.txt"
 }
+
+resource "local_file" "prefix" {
+  content  = local.content
+  filename = "${path.module}/resource/prefix.txt"
+}

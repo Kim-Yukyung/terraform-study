@@ -85,3 +85,7 @@ variable "password" {
 variable "var" {
   default = "default"
 }
+
+variable "prefix" {
+    default = "hello"
+}
