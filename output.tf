@@ -1,3 +1,3 @@
-output "lifecyclePostCondition" {
-  value = local_file.lifecyclePostCondition.id
-}
+# output "lifecyclePostCondition" {
+#   value = local_file.lifecyclePostCondition.id
+# }

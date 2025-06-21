@@ -73,3 +73,13 @@ resource "local_file" "lifecycle" {
 #     }
 #   }
 # }
+
+resource "local_file" "data1" {
+  content  = "data"
+  filename = "${path.module}/resource/data1.txt"
+}
+
+resource "local_file" "data2" {
+  content  = data.local_file.file.content
+  filename = "${path.module}/resource/data2.txt"
+}
