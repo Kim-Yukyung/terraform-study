@@ -12,3 +12,8 @@ output "list_all" {
     upper(name)
   ]
 }
+
+# 파일 절대 경로 출력
+output "file_adspath" {
+  value = abspath(local_file.prefix.filename)
+}

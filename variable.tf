@@ -87,5 +87,5 @@ variable "var" {
 }
 
 variable "prefix" {
-    default = "hello"
+  default = "hello"
 }

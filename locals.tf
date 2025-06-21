@@ -1,7 +1,7 @@
 locals {
-    name = "terraform"
+  name = "terraform"
 }
 
 locals {
-    content = "${var.prefix} ${local.name}"
+  content = "${var.prefix} ${local.name}"
 }
