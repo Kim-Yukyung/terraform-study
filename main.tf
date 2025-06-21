@@ -83,3 +83,13 @@ resource "local_file" "data2" {
   content  = data.local_file.file.content
   filename = "${path.module}/resource/data2.txt"
 }
+
+resource "local_file" "password" {
+  content  = var.password
+  filename = "${path.module}/resource/password.txt"
+}
+
+resource "local_file" "var" {
+  content  = var.var
+  filename = "${path.module}/resource/var.txt"
+}
