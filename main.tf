@@ -110,3 +110,8 @@ resource "local_file" "prefix" {
 #   content  = local_file.names1[count.index].content
 #   filename = "${path.module}/resource/abc2-${element(var.names, count.index)}.txt"
 # }
+
+# resource "local_file" "moved_a" {
+#   content  = "move!"
+#   filename = "${path.module}/resource/moved.txt"
+# }

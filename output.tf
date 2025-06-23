@@ -21,3 +21,7 @@ output "file_adspath" {
 output "A_upper_value" {
   value = [for v in var.names : upper(v)]
 }
+
+# output "moved" {
+#   value = local_file.moved_a.content
+# }
