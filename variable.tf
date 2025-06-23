@@ -89,3 +89,17 @@ variable "var" {
 variable "prefix" {
   default = "hello"
 }
+
+variable "names" {
+  type    = list(string)
+  default = ["a", "b", "c"]
+}
+
+# map(string) 형태의 변수
+variable "file_content" {
+  default = {
+    a = "hello a"
+    b = "hello b"
+    c = "hello c"
+  }
+}

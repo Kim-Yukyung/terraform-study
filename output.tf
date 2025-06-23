@@ -17,3 +17,7 @@ output "list_all" {
 output "file_adspath" {
   value = abspath(local_file.prefix.filename)
 }
+
+output "A_upper_value" {
+  value = [for v in var.names : upper(v)]
+}

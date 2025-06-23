@@ -98,3 +98,15 @@ resource "local_file" "prefix" {
   content  = local.content
   filename = "${path.module}/resource/prefix.txt"
 }
+
+# resource "local_file" "names1" {
+#   count    = length(var.names)
+#   content  = var.names[count.index]
+#   filename = "${path.module}/resource/abc1-${var.names[count.index]}.txt"
+# }
+
+# resource "local_file" "names2" {
+#   count    = length(var.names)
+#   content  = local_file.names1[count.index].content
+#   filename = "${path.module}/resource/abc2-${element(var.names, count.index)}.txt"
+# }
