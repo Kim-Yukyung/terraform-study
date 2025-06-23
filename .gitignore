@@ -42,3 +42,5 @@ terraform.rc
 resource/
 *.txt
 *.zip
+
+.DS_Store
