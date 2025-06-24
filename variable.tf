@@ -77,9 +77,9 @@ variable "ingress_rules" {
   ]
 }
 
-variable "password" {
-  sensitive = true
-}
+# variable "password" {
+#   sensitive = true
+# }
 
 # 우선순위 확인 예제
 variable "var" {

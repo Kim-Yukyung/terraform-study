@@ -89,10 +89,10 @@ resource "local_file" "data2" {
   filename = "${path.module}/resource/data2.txt"
 }
 
-resource "local_file" "password" {
-  content  = var.password
-  filename = "${path.module}/resource/password.txt"
-}
+# resource "local_file" "password" {
+#   content  = var.password
+#   filename = "${path.module}/resource/password.txt"
+# }
 
 resource "local_file" "var" {
   content  = var.var

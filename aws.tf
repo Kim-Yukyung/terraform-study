@@ -26,3 +26,19 @@ resource "aws_instance" "app_server" {
     Name = "ExampleAppServerInstance"
   }
 }
+
+# 기본 VPC 생성
+resource "aws_default_vpc" "default" {
+  tags = {
+    Name = "Default VPC"
+  }
+}
+
+# 기본 서브넷 생성
+resource "aws_default_subnet" "default_az1" {
+  availability_zone = "ap-northeast-2a"
+
+  tags = {
+    Name = "Default subnet for ap-northeast-2a"
+  }
+}
