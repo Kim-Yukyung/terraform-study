@@ -20,3 +20,7 @@ terraform {
     path = "state/terraform.tfstate"
   }
 }
+
+provider "aws" {
+  region = "ap-northeast-2"
+}
