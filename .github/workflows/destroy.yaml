@@ -2,6 +2,7 @@ name: Terraform Destroy
 
 on:
   workflow_dispatch:
+  
 env:
   PREFIX: DEV
   TF_VERSION: 1.12.2
