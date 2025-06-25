@@ -1,7 +1,3 @@
-provider "aws" {
-  region = "ap-northeast-2"
-}
-
 # 최신 Amazon Linux 2 AMI ID를 자동으로 가져오기 위한 data 블록
 data "aws_ami" "amzn2" {
   most_recent = true       # 가장 최신 AMI만 검색
@@ -41,4 +37,4 @@ resource "aws_default_subnet" "default_az1" {
   tags = {
     Name = "Default subnet for ap-northeast-2a"
   }
-}
+} 

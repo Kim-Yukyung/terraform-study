@@ -7,14 +7,6 @@ module "mypw2" {
   isDB   = true
 }
 
-output "pw1" {
-  value = module.mypw1
-}
-
-output "pw2" {
-  value = module.mypw2
-}
-
 provider "aws" {
   region = "us-west-1"
 }
