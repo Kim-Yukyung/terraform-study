@@ -9,6 +9,7 @@ on:
 permissions:
   contents: read
   security-events: write
+  issues: write
 
 env:
   # Terraform variable에 사용할 prefix
