@@ -10,6 +10,8 @@ permissions:
   contents: write
   security-events: write
   issues: write
+  id-token: write
+  pull-requests: write
 
 env:
   # Terraform variable에 사용할 prefix
