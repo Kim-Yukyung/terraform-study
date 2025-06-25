@@ -37,4 +37,4 @@ resource "aws_default_subnet" "default_az1" {
   tags = {
     Name = "Default subnet for ap-northeast-2a"
   }
-} 
+}
