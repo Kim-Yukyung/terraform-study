@@ -4,15 +4,13 @@ on:
   # push:
   #   branches:
   #     - main
-  # pull_request:
+  pull_request:
   workflow_dispatch:
 
 permissions:
-  contents: write
-  security-events: write
-  issues: write
-  id-token: write
-  pull-requests: write
+  contents: write # 리포지토리 파일 수정 권한
+  security-events: write # 리포지토리 파일 수정 권한
+  pull-requests: write # PR 상태 변경 및 코멘트 권한
 
 env:
   # Terraform variable에 사용할 prefix
